@@ -1,6 +1,5 @@
 import {Component} from 'react'
 import {Route, Switch, Redirect} from 'react-router-dom'
-import Checkout from './components/Checkout'
 import LoginForm from './components/LoginForm'
 import Home from './components/Home'
 import Products from './components/Products'
@@ -100,7 +99,6 @@ class App extends Component {
             component={ProductItemDetails}
           />
           <ProtectedRoute exact path="/cart" component={Cart} />
-          <ProtectedRoute exact path="/checkout" component={Checkout} />
           <Route path="/not-found" component={NotFound} />
           <Redirect to="not-found" />
         </Switch>
