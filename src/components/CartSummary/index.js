@@ -1,5 +1,5 @@
 import {Component} from 'react'
-import PaymentPopup from '../PaymentPopup'
+import PaymentPopup from '../Checkout'
 import CartContext from '../../context/CartContext'
 import './index.css'
 
