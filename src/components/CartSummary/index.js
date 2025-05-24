@@ -1,5 +1,5 @@
 import {Component} from 'react'
-import {Link} from 'react-router-dom'
+import PaymentPopup from '../PaymentPopup'
 import CartContext from '../../context/CartContext'
 import './index.css'
 
@@ -21,11 +21,7 @@ class CartSummary extends Component {
                 Order Total: <strong>{total}/-</strong>
               </h1>
               <p>{itemsInCart} Items in cart</p>
-              <Link to="/checkout">
-                <button className="summary-btn" type="button">
-                  Checkout
-                </button>
-              </Link>
+              <PaymentPopup itemCount={itemsInCart} totalAmount={total} />
             </div>
           )
         }}
