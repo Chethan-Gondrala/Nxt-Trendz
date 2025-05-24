@@ -1,5 +1,5 @@
 import {Component} from 'react'
-import PaymentPopup from '../Checkout'
+import Checkout from '../Checkout'
 import CartContext from '../../context/CartContext'
 import './index.css'
 
@@ -21,7 +21,7 @@ class CartSummary extends Component {
                 Order Total: <strong>{total}/-</strong>
               </h1>
               <p>{itemsInCart} Items in cart</p>
-              <PaymentPopup itemCount={itemsInCart} totalAmount={total} />
+              <Checkout itemCount={itemsInCart} totalAmount={total} />
             </div>
           )
         }}
