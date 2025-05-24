@@ -1,31 +1,56 @@
-.checkout-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: linear-gradient(135deg, #fdfbfb, #ebedee);
-  text-align: center;
+/* src/components/PaymentPopup/index.css */
+.popup-container {
   padding: 20px;
-  font-family: 'Segoe UI', sans-serif;
+  width: 30vw;
+  border-radius: 3%;
+  background-color: bisque;
 }
 
-.checkout-heading {
-  font-size: 32px;
-  color: #2c3e50;
-  margin-bottom: 16px;
-  font-weight: bold;
+.payment-options {
+  margin-bottom: 15px;
 }
 
-.checkout-message {
+.summary {
+  margin-bottom: 15px;
+}
+
+.confirm-btn {
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.confirm-btn:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.success-message {
+  text-align: center;
   font-size: 18px;
-  color: #34495e;
-  margin-bottom: 8px;
+  color: green;
 }
-
 .checkout-love {
   font-size: 20px;
   color: #e74c3c;
   font-weight: 600;
   margin-top: 16px;
+}
+.checkout-btn {
+  background-color: #0b69ff;
+  color: white;
+  height: 5vh;
+  margin-bottom: 1vh;
+  padding-bottom: 2vh;
+  width: 10%;
+  text-align: center;
+  border: 15px solid #0b69ff;
+}
+.diss {
+  cursor: no-drop;
+}
+.user-dis {
+  cursor: pointer;
 }
