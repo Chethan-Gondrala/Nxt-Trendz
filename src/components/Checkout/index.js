@@ -4,7 +4,7 @@ import React, {useState} from 'react'
 import Popup from 'reactjs-popup'
 import './index.css'
 
-const PaymentPopup = ({itemCount, totalAmount}) => {
+const Checkout = ({itemCount, totalAmount}) => {
   const [paymentMethod, setPaymentMethod] = useState('')
   const [orderPlaced, setOrderPlaced] = useState(false)
 
@@ -95,4 +95,4 @@ const PaymentPopup = ({itemCount, totalAmount}) => {
   )
 }
 
-export default PaymentPopup
+export default Checkout
